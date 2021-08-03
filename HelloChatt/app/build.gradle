@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+    // apply plugin : 'com.google.gms.google-services'
+    //      부분을 아래와 같은 코드로 입력
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.ioo168400.chatt"
+        minSdk 25
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 31
+    buildToolsVersion '30.0.2'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    // firebase와 App을 연동하기 위한 필수 설정
+    implementation platform('com.google.firebase:firebase-bom:28.3.0')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Google Cloud DataBase와 연동하기 위한 설정
+    // 개인적으로 혼자 사용하는 정보를 저장할때는 스마트폰에 내장된
+    // SQL Lite3 라는 DBMS를 주로 사욯한다.
+    // App을 통해서 메시지를 서로 공유하거나, 어떤 정보를 공유하기 위해서는
+    // 중앙에 데이터를 중개, 보관 하는 DBMS가 필요하다
+    // 중앙에 설치된 DBMS는 매우 성능이 좋아야 하고, 사용자의 요구를 만족할수 있는
+    // 수준이어야 한다.
+    // 이럴때는 어쩔수 없이 상업적인 Cloud 서비스 등을 사용하게 되는데
+    // Firebase의 서비스 중에 RealTime Database를 사용하여
+    // 일단 무료로 연동이 되고
+    // 향후에 정식 서비스를 할때는 유료 서비스를 통해 사용할수 있다.
+    // 안드로이드 폰 = firebase 형식의 구조가 가장 많이 사용된다.
+    implementation 'com.google.firebase:firebase-database'
+
+    testImplementation 'junit:junit:53'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
