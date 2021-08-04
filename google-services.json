@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "149905565705",
-    "project_id": "hello-android-6a9e0",
-    "storage_bucket": "hello-android-6a9e0.appspot.com"
+    "project_number": "607570257268",
+    "project_id": "hello-android-9d4ac",
+    "storage_bucket": "hello-android-9d4ac.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:149905565705:android:c6e00e4f3e9d1d409330d8",
+        "mobilesdk_app_id": "1:607570257268:android:73a77aad5c8793bfc2b821",
         "android_client_info": {
-          "package_name": "com.callor.chatt"
+          "package_name": "com.ioo168400.chatt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "149905565705-v39vlb0ethdltabj0ctfpb43htc0a75r.apps.googleusercontent.com",
+          "client_id": "607570257268-b8blgac4v68sh3a68kfntgdkdobn257e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB06_Sa-KoO9eEzVRDhfuBCBzc_nO5z3Ng"
+          "current_key": "AIzaSyB8BrhN8EAUEpB3HYMwhPMHH512iaW6dZU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "149905565705-v39vlb0ethdltabj0ctfpb43htc0a75r.apps.googleusercontent.com",
+              "client_id": "607570257268-b8blgac4v68sh3a68kfntgdkdobn257e.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

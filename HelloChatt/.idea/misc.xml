@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/bizworks/Biz_2021_07_Android/HelloChatt/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2677083333333333" />
+        <entry key="..\:/bizworks/Biz_2021_07_Android/HelloChatt/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2677083333333333" />
         <entry key="..\:/bizworks/Biz_2021_07_Android/HelloChatt/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/bizworks/Biz_2021_07_Android/HelloChatt/app/src/main/res/layout/chatt_item.xml" value="0.1" />
       </map>

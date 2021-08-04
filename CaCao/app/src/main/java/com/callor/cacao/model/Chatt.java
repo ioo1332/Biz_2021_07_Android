@@ -1,4 +1,4 @@
-package com.ioo168400.chatt.model;
+package com.callor.cacao.model;
 
 public class Chatt {
 
