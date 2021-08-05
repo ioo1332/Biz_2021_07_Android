@@ -14,7 +14,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        targetSdkVersion 31
+        targetSdkVersion 30
         minSdkVersion 25
     }
 
@@ -28,7 +28,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    compileSdkVersion 31
+    compileSdkVersion 30
     buildToolsVersion '30.0.2'
 }
 
@@ -42,6 +42,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
 
     implementation 'com.google.firebase:firebase-database'
+    implementation 'androidx.preference:preference:1.1.1'
 
 
     testImplementation 'junit:junit:53'

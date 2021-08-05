@@ -57,7 +57,10 @@ dependencies {
     // 안드로이드 폰 = firebase 형식의 구조가 가장 많이 사용된다.
     implementation 'com.google.firebase:firebase-database'
 
-    testImplementation 'junit:junit:53'
+
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
