@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">내 도서관</string>
+    <string name="action_settings">설정</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">메인</string>
+    <string name="second_fragment_label">다음화면</string>
+    <string name="next">다음</string>
+    <string name="previous">이전</string>
+
+    <string name="hello_first_fragment">내 도서관 App 2021</string>
+    <string name="hello_second_fragment">두번째 화면 보이기. Arg: %1$s</string>
+</resources>
