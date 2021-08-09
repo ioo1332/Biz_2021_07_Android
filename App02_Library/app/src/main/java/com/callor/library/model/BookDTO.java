@@ -26,4 +26,5 @@ public class BookDTO {
     private String description;//	string	검색 결과 문서의 내용을 요약한 패시지 정보이다. 문서 전체의 내용은 link를 따라가면 읽을 수 있다. 패시지에서 검색어와 일치하는 부분은 태그로 감싸져 있다.
     private String pubdate;//	datetime	출간일 정보이다.
 
+
 }
