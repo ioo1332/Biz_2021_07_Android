@@ -5,6 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.callor.topnews.databinding.ActivityMainBinding;
+import com.callor.topnews.service.NaverService;
+import com.callor.topnews.service.impl.NaverNewsServiceImplV1;
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     /**
@@ -34,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_main);
         main_binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(main_binding.getRoot());
+
+        Date date=new Date(System.currentTimeMillis());
+        SimpleDateFormat sd=new SimpleDateFormat("yyyy-MM-dd");
+        String curDate=sd.format(date);
+
+        NaverService naverService=new NaverNewsServiceImplV1(main_binding.newsListView);
+        naverService.getNews(curDate);
 
 
     }
