@@ -1,0 +1,24 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    // project gradle builder 가 사용할 공통 property 를 선언하고 사용하기
+    // 여기(buildescipt) 영역에 ext{} tag 내에 속성 변수를 선언할수있다
+    // 여기에 선언된 변수는 $rootProject.변수이름 형식으로 사용할수 있다
+    ext {
+        roomVersion = '2.3.0'
+        lifecycleVersion = '2.3.1'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.0"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
