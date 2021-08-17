@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.callor.movie.MainActivity">
+    <!--
+    menu.xml 에서 SearchView 클래스
+    search item 을 추가하면
+    Actionbar 에 검색창이 자동으로 만들어진다
+    SearchView 클래스를 사용하여 검색기능을 구현할수있다
+    -->
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

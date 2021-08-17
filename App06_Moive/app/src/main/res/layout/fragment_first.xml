@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+    <!--
+    ConstraintLayout 내의 view 는
+    layout_width,layout_height 를 각각 0dp 로 만들고
+    TopToTop,BottomToBottom,LeftToLeft,RightToRight 등을
+    parent 에 매칭하면 화면을 가득채우는 view 가 생성된다
+
+    layout_width, layout_height 를 match_parents 로 설정하는것과 유사한 효과를 낸다
+    -->
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="#CCCCCC"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
