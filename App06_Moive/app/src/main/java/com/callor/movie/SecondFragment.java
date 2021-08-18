@@ -41,7 +41,7 @@ public class SecondFragment extends Fragment {
                     .getString("movie_search","없음");
             Log.d("검색문자열",movie_text);
             NaverAPIService naverAPIService
-                    = new NaverMovieServiceImplV1();
+                    = new NaverMovieServiceImplV1(binding);
             naverAPIService.getNaverMovie(movie_text);
         }
         return binding.getRoot();

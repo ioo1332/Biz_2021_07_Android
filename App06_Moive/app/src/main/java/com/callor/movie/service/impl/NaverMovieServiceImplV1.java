@@ -23,6 +23,7 @@ public class NaverMovieServiceImplV1 implements NaverAPIService {
     private NaverMovieAdapter adapter;
     private FragmentSecondBinding secondBinding;
 
+
     public NaverMovieServiceImplV1(FragmentSecondBinding secondBinding) {
         this.secondBinding = secondBinding;
     }
