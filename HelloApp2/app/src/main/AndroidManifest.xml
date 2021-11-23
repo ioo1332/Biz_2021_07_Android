@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.callor.hello">
+
+    <!--
+    NoActionBar Theme
+    기본적은 Android App 은
+    화면상단에 ActionBar 영역이 존재를 한다
+    여기에는 Title(어플이름) 을 표시하는 영역이다
+
+    기본 ActionBar 를 감추고
+    개발자가 Custom 한 ActionBar 를 사용하기 위하여
+    기본 main Theme 를 NoActionBar 로 설정을 한다.
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloApp2">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.HelloApp2.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
